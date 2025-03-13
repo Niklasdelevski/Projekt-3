@@ -1,0 +1,232 @@
+body {
+    font-size: 20px; 
+    font-family: "Open Sans", sans-serif;
+    background-color: hsl(221, 100%, 96%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container-1, .container-2 {
+    border-radius: 35px;
+    padding: 20px;
+    height: 600px;
+}
+
+.container-1 {
+    text-align: center;
+    background: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    color: white;
+    width: 450px;
+    margin-right: -50px;
+    z-index: 1;
+}
+
+.container-2 {
+    background-color: white;
+    color: black;
+    width: 450px;
+    margin-left: 0px;
+    text-align: left;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.container-1-1 {
+    background: linear-gradient(to bottom, hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    margin: 20px auto;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-1-1 .score {
+    font-size: 85px;
+    margin: 0;
+    font-weight: bold;
+}
+
+.container-1-1 .subtext {
+    font-size: 17.5px;
+    margin: 0;
+    color: rgb(202, 202, 202);
+}
+
+.container-2-1 {
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.continue-box {
+    background-color: hsl(224, 30%, 27%);
+    color: white;
+    border-radius: 100px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+    height: 40px;
+    width: 350px;
+    font-size: 18px;
+}
+
+main {
+    margin: auto;
+    margin-left: 65px;
+    margin-bottom: 40px;
+}
+
+.container-2-1 .subtext-1,
+.container-2-1 .subtext-2,
+.container-2-1 .subtext-3,
+.container-2-1 .subtext-4 {
+    text-align: left;
+    border-radius: 10px;
+    height: 70px;
+    width: 325px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 20px;
+}
+
+.container-2-1 .subtext-1 img,
+.container-2-1 .subtext-2 img,
+.container-2-1 .subtext-3 img,
+.container-2-1 .subtext-4 img {
+    margin-right: 20px;
+}
+
+.container-2-1 .subtext-1 .score,
+.container-2-1 .subtext-2 .score,
+.container-2-1 .subtext-3 .score,
+.container-2-1 .subtext-4 .score {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.unit {
+    margin-left: 10px;
+    margin-right: 10px;
+    color: rgba(0, 0, 0, 0.4);
+    font-size: 17.5px;
+}
+
+.points {
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.container-2-1 .subtext-1 {
+    color: hsl(0, 100%, 67%);
+    background-color: hsla(0, 80%, 84%, 0.100);
+}
+
+.container-2-1 .subtext-2 {
+    color: hsl(39, 100%, 56%);
+    background-color: hsla(39, 100%, 56%, 0.100);
+}
+
+.container-2-1 .subtext-3 {
+    color: hsl(166, 100%, 37%);
+    background-color: hsla(166, 100%, 37%, 0.100);
+}
+
+.container-2-1 .subtext-4 {
+    color: hsl(234, 85%, 45%);
+    background-color: hsla(234, 85%, 45%, 0.100);
+}
+
+.attribute {
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.container-2-1 .subtext-1 img,
+.container-2-1 .subtext-2 img,
+.container-2-1 .subtext-3 img,
+.container-2-1 .subtext-4 img {
+    margin-right: 20px;
+    width: 30px;
+    height: 30px;
+}
+
+.great {
+    margin-top: 45px;
+    margin-bottom: 30px;
+    font-size: 40px;
+}
+
+.ranking {
+    color: rgb(202, 202, 202);
+    margin-top: auto;
+    left: 50%;
+    text-align: center;
+    width: 100%;
+    max-width: 250px;
+    margin: auto;
+    font-size: 18px;
+}
+
+.Result {
+    color: rgb(202, 202, 202);
+    font-size: 30px;
+    margin-top: 45px;
+    margin-bottom: 47.5px;
+}
+
+@media (max-width: 768px) {
+    body {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: stretch;
+        background-color: white;
+    }
+
+    .container-1, .container-2 {
+        width: 100%;
+        height: auto;
+        margin: auto;
+        padding: auto;
+    }
+
+    .container-1 {
+        margin-bottom: 20px;
+        height: auto;
+        border-radius: 0 0 35px 35px;
+    }
+
+    .container-2 {
+        border-radius: 0;
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-top: -15px;
+    }
+
+        main {
+        margin: 0 auto;
+        width: 100%;
+        padding: 0 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .continue-box {
+        margin-top: auto 
+    }
+}
